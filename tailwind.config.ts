@@ -9,6 +9,14 @@ const config: Config = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    {
+      pattern: /from-./,
+    },
+    {
+      pattern: /to-./,
+    }
+  ],
   theme: {
     extend: {
       backgroundImage: {

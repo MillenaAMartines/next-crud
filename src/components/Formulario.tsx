@@ -40,15 +40,16 @@ export default function Formulario(props: FormularioProps) {
             ></Entrada>
 
             <div className="flex justify-end mt-7 ">
-                <Botao cor="green" classname="mr-2"
+                <Botao cor="blue" classname="mr-2"
                 onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))} >
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>
 
-                <Botao cor="red" onClick={props.cancelado} >
+                <Botao cor= "red" onClick={props.cancelado} >
                     Cancelar
                 </Botao>
             </div>
         </div>
     )
 }
+// erro de cor no botao
